@@ -8,11 +8,11 @@
 </p>
 
 ## Breezeの入れ方
-composer require laravel/breeze --dev
-php artisan breeze:install  ←このコマンドを実行すると、blade or vue or reactみたいなの聞かれるから、「blade」を選択
-npm install
-npm run dev
-php artisan migrate
+- composer require laravel/breeze --dev
+- php artisan breeze:install  ←このコマンドを実行すると、blade or vue or reactみたいなの聞かれるから、「blade」を選択
+- npm install
+- npm run dev
+- php artisan migrate
 
 ※既存のプロジェクトでこのコマンド実行したら全部初期化されるから、やるなら新規プロジェクトで
 
