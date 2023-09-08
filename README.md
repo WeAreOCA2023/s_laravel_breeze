@@ -7,6 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Breezeの入れ方
+composer require laravel/breeze --dev
+php artisan breeze:install  ←このコマンドを実行すると、blade or vue or reactみたいなの聞かれるから、「blade」を選択
+npm install
+npm run dev
+php artisan migrate
+
+※既存のプロジェクトでこのコマンド実行したら全部初期化されるから、やるなら新規プロジェクトで
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
