@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
-            $table->foreignId('company_id')->constrained('companies')->onDelete('cascade');
+            $table->char('company_id', 10);
+            $table->foreign('company_id')->references('company_id')->on('companies')->onDelete('cascade');
             $table->string('user_name', 255)->unique();
             $table->string('first_name', 128);
             $table->string('last_name', 128);
